@@ -12,6 +12,15 @@ code {
 		monospace;
 }
 
+.main {
+	margin-top: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.main-doc {
+		margin-top: 300px;
+	}
+}
 .main-section {
 	width: 70%;
 	float: right;
@@ -19,12 +28,22 @@ code {
 }
 
 #navbar {
-	background-color: pink;
 	width: 20%;
 	text-align: center;
 	border-right: solid;
-	border-color: gray;
-	overflow: scroll;
+	border-color: black;
+	position: fixed;
+}
+
+@media only screen and (max-width: 1200px) {
+	#navbar {
+		width: 100%;
+		position: absolute;
+		font-size: 10px;
+		overflow: scroll;
+		height: 300px;
+		margin-top: -300px;
+	}
 }
 
 header {
@@ -44,7 +63,10 @@ li {
 }
 .link {
 	border-bottom: 2px solid;
-	padding: 0;
-	border-top: solid;
-	height: 30px;
+	padding: 10px;
+}
+
+code {
+	background-color: lightgray;
+	border-radius: 5px;
 }
